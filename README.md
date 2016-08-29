@@ -6,6 +6,7 @@ Notes from various machine learning books
 1. Building Machine Learning Systems with Python
 2. Learning scikit-learn: Machine Learning in Python
 3. Machine Learning in Action
+4. Natural Language Processing with Python
 
 ## License
 [The MIT License (MIT)](LICENSE)
