@@ -1,0 +1,27 @@
+Natural Language Processing with Python
+=======================================
+
+Chapter 1
+=========
+Language Processing and Python
+
+nltk.download() to download all corpus for the book.
+
+corpus: nltk.book
+
+Searching text:
+concordance() - works like grep
+Usage: text1.concordance(word)
+Make sure to create a nltk.text object of a corpus to use concordance function on it.
+
+similar() - Showing words having similar context in the corpus
+Usage: text1.similar(word)
+
+common_context() - Showing context shared by two or more words
+Usage: text1.common_context([word1, word2, ...])
+
+dispersion_plot() - Showing positional information of word in a corpus
+Usage: text1.dispersion_plot([word1, word2, ...])
+
+generate() - Generate random text from the corpus
+Usage: text1.generate() - Not found in nltk 3.0
