@@ -25,3 +25,24 @@ Usage: text1.dispersion_plot([word1, word2, ...])
 
 generate() - Generate random text from the corpus
 Usage: text1.generate() - Not found in nltk 3.0
+
+len() - find the lenght of a string
+Usage: len(string)
+
+set() - find distinct words
+Usage: set(string)
+
+Lexical richness of the text:
+len(string) / len(set(string))
+
+count() - count the occurance of a word
+Usage: string.count(word)
+
+FreqDist() - Output the frequency distribution in dict format
+Usage: FreqDist(string)
+
+Cumulative frequency plot:
+Usage: dict.plot(count, cumulative=True)
+
+collocations() - Bigrams that occur more often
+Usage: text4.collocations()
