@@ -46,3 +46,28 @@ Usage: dict.plot(count, cumulative=True)
 
 collocations() - Bigrams that occur more often
 Usage: text4.collocations()
+
+Challenges in NLP:
+a. Word Sense Disambiguation:
+For e.g He serve the dish.
+
+b. Pronoun Resolution:
+For e.g The thieves stole the paintings. They were sold.
+
+c. Generating Language Output:
+Usage: Question answering and Machine Translation
+
+d. Machine Translation:
+babelize_shell() - To make the translation back and forth between two languages
+Note: No longer works
+
+e. Spoken Dialogue Systems:
+Siri or Google Now
+
+f. Textual Entailment:
+Directional relation between text fragments
+For e.g
+Text: David Golinkin is the editor or author of 18 books, and over 150 responsa, articles, sermons and books
+Hypothesis: Golinkin has written 18 books
+
+===============================================================================================================
