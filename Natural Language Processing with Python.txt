@@ -71,3 +71,51 @@ Text: David Golinkin is the editor or author of 18 books, and over 150 responsa,
 Hypothesis: Golinkin has written 18 books
 
 ===============================================================================================================
+
+Chapter 2
+=========
+Accessing Text Corpora and Lexical Resources
+
+a. Gutenberg Corpus: Contains thousands of books
+nltk.corpus.gutenberg
+
+Functions:
+fileids()
+Usage: gutenberg.fileids()
+
+words()
+Usage: gutenberg.words(fileid)
+
+raw()
+Usage: gutenberg.raw(fileid)
+
+sents()
+Usage: gutenberg.sents(fileid)
+
+b. Web and Chat Text:
+nltk.corpus.webtext
+
+c. NPS Chat:
+nltk.corpus.nps_chat
+
+d. Brown Corpus:
+nlkt.corpus.brown
+
+Functions:
+categories()
+Usage: brown.categories()
+
+brown.words(categories=category)
+
+nlkt.ConditionalFreqDist()
+
+e. Reuters Corpus:
+Training and test dataset
+nltk.corpus.reuters
+
+Functions:
+reuters.categories(fileid)
+reuters.fileids(category)
+
+f. Inaugural Address Corpus
+nltk.corpus.inaugural
