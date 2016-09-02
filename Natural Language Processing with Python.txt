@@ -145,3 +145,35 @@ textCorpusReader
 BracketParseCorpusReader
 
 Passing corpus root, and file pattern as params.
+
+Conditional Frequency Distributions:
+Frequency distributions amoung several categories
+
+Usage:
+cfd = nltk.ConditionalFreqDist(
+	(target, fileid[:4])
+	for fileid in inaugural.fileids() 
+	for w in inaugural.words(fileid)
+	for target in ['america', 'citizen'] 
+	if w.lower().startswith(target))
+
+Generating random text with Bigrams:
+Using nltk.bigrams(corpus), and ConditionalFreqDist(bigrams) to get the highest probability bigram, generate random text.
+
+Lexical Resources:
+Lexicon, collection of words/phrases along with associated information, such as POS, head word.
+
+Various Lexicons:
+a. Wordlist Corpora
+nltk.corpus.words
+nltk.corpus.stopwords
+nltk.corpus.names
+
+b. A Pronouncing Dictionary
+nlkt.corpus.cmudist
+
+c. Comparative Wordlists - 200 common words in several languages
+nltk.corpus import swadesh
+
+d. Shoebox and Toolbox lexicons
+nltk.corpus.toolbox
