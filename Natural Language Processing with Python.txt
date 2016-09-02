@@ -119,3 +119,29 @@ reuters.fileids(category)
 
 f. Inaugural Address Corpus
 nltk.corpus.inaugural
+
+g. Annotated Text Corpora
+100 of corpora
+
+h. Corpora in other languages
+
+More functions:
+a. abspath(fileid)
+b. encoding(fileid)
+c. open(fileid)
+d. root()
+e. readme()
+
+Text Corpus Structure:
+Four types of structures
+a. Isolated
+b. Categorized
+c. Overlapping
+d. Temporal
+
+Loading your own corpus:
+Using two libraries
+textCorpusReader
+BracketParseCorpusReader
+
+Passing corpus root, and file pattern as params.
