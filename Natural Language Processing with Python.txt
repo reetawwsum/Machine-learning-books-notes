@@ -306,3 +306,53 @@ Using open() and write()
 Use textwrap library to avoid overflowing of strings.
 
 ================================================================================================================
+
+Chapter 4
+=========
+Writing Structured Programs
+
+Assignments
+Equality
+Conditionals
+Sequences - Tuple
+Counters
+Functions
+Call by value and call by reference
+
+Using assert to handle types of varible passed to function
+assert isinstance(word, basestring), "argument to tag() must be a string"
+
+Documenting Functions
+Docstrings can include a doctest block, illustrating the use of the function and the expected output.
+
+Functions as Arguments
+
+Lambda expressions
+
+Use yield instead of accumulating variable to return from an function.
+
+Higher-Order Function
+filter()
+map()
+
+Program Development:
+Key high-level abilities are algorithm design and its manifestation in structured programming. 
+Key low-level abilities include familiarity with the syntactic constructs of the language, and knowledge of a variety of diagnostic methods for trouble-shooting a program which does not exhibit the expected behavior.
+
+Python Debugger:
+import pdb
+Usage: pdb.run(myfunction)
+
+Algorithm design:
+a. Divide and Conquer
+b. Recursion
+c. Dynamic Programming
+d. Greedy
+
+Third party packages:
+a. Matplotlib - Plotting a graph
+b. NetworkX - The NetworkX package is for defining and manipulating structures consisting of nodes and edges, known as graphs.
+c. csv
+d. NumPy
+
+===============================================================================================================================
