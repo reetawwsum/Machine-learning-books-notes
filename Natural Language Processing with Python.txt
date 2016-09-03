@@ -175,5 +175,21 @@ nlkt.corpus.cmudist
 c. Comparative Wordlists - 200 common words in several languages
 nltk.corpus import swadesh
 
-d. Shoebox and Toolbox lexicons
+d. Shoebox and Toolbox lexicons - contains series of attribute-value pairs
 nltk.corpus.toolbox
+
+e. WordNet
+nltk.corpus.wordnet as wn
+
+Synonyms:
+Usage:
+wn.synsets('motorcar')
+wn.synset('car.n.01').lemma_names
+wn.synset('car.n.01').definition
+wn.synset('car.n.01').examples
+wn.lemmas('car')
+
+The WordNet Hierarchy:
+Relationship between various synonyms and Semantic Similarity
+
+==========================================================================================================
