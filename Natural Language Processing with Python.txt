@@ -356,3 +356,77 @@ c. csv
 d. NumPy
 
 ===============================================================================================================================
+
+Chapter 5
+=========
+Categorizing and Tagging words
+
+Using a tagger:
+nltk.pos_tag(text)
+
+The text.similar() method takes a word w, finds all contexts w1 w w2, then finds all words w' that appear in the same context, 
+i.e. w1 w'w2.
+
+Tagged Corpora:
+nltk.tag.str2tuple('fly/NN')
+
+nltk.corpus.nps_chat.tagged_words()
+nltk.corpus.conll2000.tagged_words()
+nltk.corpus.treebank.tagged_words()
+
+Automatic Tagging:
+a. The Default Tagger
+Usage:
+default_tagger = nltk.DefaultTagger('NN')
+default_tagger.tag(tokens)
+
+b. The Regular Expression Tagger
+Usage:
+regexp_tagger = nltk.RegexpTagger(patterns)
+regexp_tagger.tag(brown_sents[3])
+
+c. The lookup Tagger
+Usage:
+most_freq_words = fd.keys()[:100]
+likely_tags = dict((word, cfd[word].max()) for word in most_freq_words) 
+baseline_tagger = nltk.UnigramTagger(model=likely_tags)
+
+In order to avoid None tag, use default backoff tag
+baseline_tagger = nltk.UnigramTagger(model=likely_tags, backoff=nltk.DefaultTagger('NN'))
+
+Evaluation:
+Evaluation on test dataset from each corpus
+Usage:
+baseline_tagger.evaluate(brown_tagged_sents)
+
+N-Gram Tagging:
+Usage:
+brown_tagged_sents = brown.tagged_sents(categories='news')
+brown_sents = brown.sents(categories='news')
+unigram_tagger = nltk.UnigramTagger(brown_tagged_sents)
+unigram_tagger.tag(brown_sents[2007])
+
+Separating the training and testing dataset.
+
+Bigram tagging takes in account the context of the sentence, but fails to generalise to new sentences.
+
+Combing tagger:
+t0 = nltk.DefaultTagger('NN')
+t1 = nltk.UnigramTagger(train_sents, backoff=t0) 
+t2 = nltk.BigramTagger(train_sents, backoff=t1)
+t2.evaluate(test_sents)
+
+Storing taggers:
+For future purposes.
+
+Transformation based tagging:
+Brill tagging algorithm: The general idea is very simple: guess the tag of each word, then go back and fix the mistakes.
+
+nltk.tag.brill.demo()
+
+Determining the category of a word:
+Morphological Clues
+Syntactic Clues
+Semantic Clues
+
+==========================================================================================================================
