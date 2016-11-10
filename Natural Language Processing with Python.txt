@@ -430,3 +430,23 @@ Syntactic Clues
 Semantic Clues
 
 ==========================================================================================================================
+
+Chapter 6
+=========
+Learning to classify text
+
+Supervised classification:
+Choose correct class for a given input.
+
+Classifier:
+NaiveBayes
+
+Use nltk.classify.apply_features to avoid storing every feature instance in memory.
+
+Avoid overfitting and underfitting using large features and less features.
+
+Break the dataset into two subsets:
+Training set, validation set, and test set
+
+Document Classification:
+Dataset: Movies reviews (Positive/Negative)
