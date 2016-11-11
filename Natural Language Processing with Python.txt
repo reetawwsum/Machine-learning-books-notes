@@ -440,6 +440,7 @@ Choose correct class for a given input.
 
 Classifier:
 NaiveBayes
+DecisionTree
 
 Use nltk.classify.apply_features to avoid storing every feature instance in memory.
 
@@ -448,5 +449,49 @@ Avoid overfitting and underfitting using large features and less features.
 Break the dataset into two subsets:
 Training set, validation set, and test set
 
-Document Classification:
+Applications:
+
+a. Document Classification:
 Dataset: Movies reviews (Positive/Negative)
+
+b. POS Tagging:
+Approaches:
+Individual word rule based
+Context
+History
+Hidden Markov Models
+
+c. Sentence Segmentation
+
+d. Dialogue Act Types
+
+e. Textual Entailment
+
+Evaluation on test set
+
+Accuracy
+Precision and Recall
+Confusion matrix
+Cross validation (N-Folds)
+
+Learning algorithms:
+
+a. Decision Tree:
+Working:
+Finds best decision stump using entropy or information gain.
+
+b. Naive Bayes:
+Working:
+P(label|features) = P(features, label) / P(features)
+				  = P(features, label) # P(features) is same for every choice of label
+				  = P(label) P(features|label)
+				  = P(label) Pie P(f|label)
+
+Now, P(f|label) = count(f, label) / count(label)
+
+Use smoothing in order to avoid 0 counts.
+
+c. Maximum Entropy Classifier
+It's same as Naive Bayes, but a conditional model
+
+===========================================================================================================
