@@ -495,3 +495,40 @@ c. Maximum Entropy Classifier
 It's same as Naive Bayes, but a conditional model
 
 ===========================================================================================================
+
+Chapter 7
+=========
+Extracting information from Text
+
+Converting unstrucutured data to structured one.
+Applications:
+Business intelligence, Resume harvesting, Media Analysis, Sentiment analysis, and email scanning.
+
+Architecture:
+Raw text -> Sentence segmentation -> tokenization -> POS tagging -> Name Entity Recognition -> Relation recognition
+
+Chunking:
+Technique for Name Entity Recognition
+
+NP-Chunking:
+Rule based algorithms
+
+Representating chunks: IOB tags (Inside, Outside, and Beginnning)
+
+Dataset:
+CoNLL-2000
+
+Various models:
+Regular expression-based chunkers
+n-gram chunkers
+Classifier-based chunkers
+
+nltk.tree package
+
+Name-Entity Recognition:
+nltk.ne_chunk()
+
+Relation Extractin:
+Rule based
+
+=======================================================================================================
