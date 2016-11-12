@@ -554,3 +554,28 @@ nltk.parse_dependency_grammar()
 PCFG is used to avoid ambiguity.
 
 =======================================================================================================
+
+Chapter 9
+=========
+Building Feature-Based Grammars
+
+Handling syntactic agreements in PCFG:
+Using grammar rules such as
+N[NUM=pl] or N[NUM=sg] or N[NUM=?n]
+
+Similar for tenses and others
+N[TENSE=pres]
+
+Other notation is
+[POS=N, TENSE=pres]
+
+Attribute Value Matrix (AVM)
+[POS=N]
+[AGR=[PER=3 ]]
+[	 [NUM=pl]]
+
+To store this in python, use nltk.FeatStruct()
+
+Lexicalised PCFG is better option.
+
+====================================================================================================
