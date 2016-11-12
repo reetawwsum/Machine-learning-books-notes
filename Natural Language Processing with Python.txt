@@ -532,3 +532,25 @@ Relation Extractin:
 Rule based
 
 =======================================================================================================
+
+Chapter 8
+=========
+Analysing Sentence Structure
+
+The purpose of grammar is to give an explicit description of a language.
+
+Context Free Grammar:
+Top-down parsing and bottom-up parsing
+
+Bottom-up: Shift-Reduce parsing
+
+Use dynamic programming to speed up.
+
+Dependency Grammar:
+How words are relate to other words.
+
+nltk.parse_dependency_grammar()
+
+PCFG is used to avoid ambiguity.
+
+=======================================================================================================
