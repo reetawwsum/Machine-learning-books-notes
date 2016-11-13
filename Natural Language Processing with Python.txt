@@ -579,3 +579,22 @@ To store this in python, use nltk.FeatStruct()
 Lexicalised PCFG is better option.
 
 ====================================================================================================
+
+Chapter 10
+==========
+Analyzing the meaning of Sentences
+
+Natural Language Understanding:
+Naive way:
+Using parsing convert the english sentence to sql query.
+
+Semantics and Logic:
+Convert natural language to logical language.
+a. Propositional Logic (Boolean operators)
+b. First order logic
+
+It includes model building or inference for semantic analysis.
+
+Discourse Semantics:
+
+====================================================================================================
