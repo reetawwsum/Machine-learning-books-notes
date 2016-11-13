@@ -598,3 +598,20 @@ It includes model building or inference for semantic analysis.
 Discourse Semantics:
 
 ====================================================================================================
+
+Chapter 11
+==========
+Managing Linguistic Data
+
+Corpus:
+TIMIT Corpus - Speech database
+Development and evaluation of automatic speech recognition systems.
+
+Corpus Structure
+Corpus Life Cycle
+Acquiring data
+Using XML for storing linguistic data
+
+Using OLAC Metadata for describing language resources.
+
+=====================================================================================================
