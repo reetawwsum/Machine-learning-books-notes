@@ -7,6 +7,7 @@ Notes from various machine learning books
 2. Learning scikit-learn: Machine Learning in Python
 3. Machine Learning in Action
 4. Natural Language Processing with Python
+5. Programming in Scala
 
 ## License
 [The MIT License (MIT)](LICENSE)

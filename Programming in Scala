@@ -1,0 +1,55 @@
+Programming in Scala
+====================
+
+Chapter 1
+=========
+A Scalable Language
+
+The name Scala stands for "scalable language." You can apply Scala to a 
+  wide range of programming tasks, from writing small scripts to building large 
+  systems.
+
+Scala is a blend of object-oriented and functional programming concepts in a 
+  statically typed language.
+
+1.1 A LANGUAGE THAT GROWS ON YOU
+--------------------------------
+Growing new types
+Growing new control constructs
+
+Java comes with a rich, thread-based concurrency library. Scala programs can use
+  it like any other Java API. However, Akka is an additional Scala library that 
+  implements an actor model similar to Erlang's.
+
+1.2 WHAT MAKES SCALA SCALABLE?
+------------------------------
+Combination of object-oriented and functional programming
+
+Scala is object-oriented
+Traits are like interfaces in Java, but they can also have method implementations 
+  and even fields.
+
+Scala is functional
+Functional programming is guided by two main ideas:
+1. The first idea is that functions are first-class values.
+2. The second main idea of functional programming is that the operations of a 
+  program should map input values to output values rather than change data in 
+  place
+
+1.3 WHY SCALA?
+--------------
+Scala is compatible
+Scala programs compile to JVM bytecodes. Their run-time performance is usually 
+  on par with Java programs. Scala code can call Java methods, access Java fields,
+  inherit from Java classes, and implement Java interfaces.
+
+Scala is concise
+
+Scala is high-level
+
+Scala is statically typed
+
+1.4 SCALA'S ROOTS
+-----------------
+Scala's design has been influenced by many programming languages and ideas in 
+  programming language research.
