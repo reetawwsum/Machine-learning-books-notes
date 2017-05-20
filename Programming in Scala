@@ -53,3 +53,41 @@ Scala is statically typed
 -----------------
 Scala's design has been influenced by many programming languages and ideas in 
   programming language research.
+
+Chapter 2
+=========
+First Steps in Scala
+
+STEP 1. LEARN TO USE THE SCALA INTERPRETER
+------------------------------------------
+All of Java's primitive types have corresponding classes in the scala package.
+
+STEP 2. DEFINE SOME VARIABLES
+-----------------------------
+Scala has two kinds of variables, vals and vars. A val is similar to a final 
+  variable in Java. Once initialized, a val can never be reassigned. A var, by 
+  contrast, is similar to a non-final variable in Java.
+
+STEP 3. DEFINE SOME FUNCTIONS
+-----------------------------
+Function definitions start with def.
+If the function is recursive, you must explicitly specify the function's result 
+  type.
+
+Scala's Unit type is similar to Java's void type
+
+STEP 4. WRITE SOME SCALA SCRIPTS
+--------------------------------
+Command line arguments to a Scala script are available via a Scala array named 
+  args. In Scala, arrays are zero based, and you access an element by specifying 
+  an index in parentheses.
+
+STEP 5. LOOP WITH WHILE; DECIDE WITH IF
+---------------------------------------
+Note that Java's + +i and i++ don't work in Scala. To increment in Scala, you 
+  need to say either i = i + 1 or i += 1.
+
+STEP 6. ITERATE WITH FOREACH AND FOR
+------------------------------------
+Scala enables you to program imperatively, but as you get to know Scala better, 
+  you'll likely often find yourself programming in a more functional style.
