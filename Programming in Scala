@@ -267,3 +267,72 @@ If you want to evaluate the right hand side no matter what, use & and | instead.
 ------------------
 Operators in Scala are method calls, and that implicit conversions to rich 
   variants exist for Scala's basic types that add even more useful methods.
+
+Chapter 6
+=========
+Functional Objects
+
+6.1 A SPECIFICATION FOR CLASS RATIONAL
+--------------------------------------
+
+6.2 CONSTRUCTING A RATIONAL
+---------------------------
+
+IMMUTABLE OBJECT TRADE-OFFS
+1. Immutable objects are often easier to reason about than mutable ones, because 
+  they do not have complex state spaces that change over time.
+2. You can pass immutable objects around quite freely, whereas you may need to 
+  make defensive copies of mutable objects before passing them to other code.
+3. There is no way for two threads concurrently accessing an immutable to corrupt 
+  its state once it has been properly constructed, because no thread can change 
+  the state of an immutable.
+4. Immutable objects make safe hash table keys.
+
+The main disadvantage of immutable objects is that they sometimes require that a 
+  large object graph be copied, whereas an update could be done in its place.
+
+The Scala compiler will compile any code you place in the class body, which isn't 
+  part of a field or a method definition, into the primary constructor.
+
+6.3 REIMPLEMENTING THE TOSTRING METHOD
+--------------------------------------
+
+6.4 CHECKING PRECONDITIONS
+--------------------------
+The require method takes one boolean parameter. If the passed value is true, 
+  require will return normally. Otherwise, require will prevent the object 
+  from being constructed by throwing an IllegalArgumentException.
+
+6.5 ADDING FIELDS
+-----------------
+
+6.6 SELF REFERENCES
+-------------------
+
+6.7 AUXILIARY CONSTRUCTORS
+--------------------------
+In Scala, constructors other than the primary constructor are called auxiliary 
+  constructors.
+
+In Scala, every auxiliary constructor must invoke another constructor of the same 
+  class as its first action. 
+
+6.8 PRIVATE FIELDS AND METHODS
+------------------------------
+
+6.9 DEFINING OPERATORS
+----------------------
+
+6.10 IDENTIFIERS IN SCALA
+-------------------------
+Camel-case names of fields, method parameters, local variables, and functions 
+  should start with a lower case letter, for example: length, flatMap, and s. 
+  Camel-case names of classes and traits should start with an upper case letter, 
+  for example: BigInt, List, and UnbalancedTreeMap.
+
+6.11 METHOD OVERLOADING
+-----------------------
+
+6.12 IMPLICIT CONVERSIONS
+-------------------------
+You can create an implicit conversion that converts types when needed.
