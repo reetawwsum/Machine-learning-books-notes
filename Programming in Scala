@@ -160,3 +160,56 @@ Prefer vals, immutable objects, and methods without side effects. Reach for
 STEP 12. READ LINES FROM A FILE
 -------------------------------
 Use scala.io.Source library to read lines from a file.
+
+Chapter 4
+=========
+Classes and Objects
+
+4.1 CLASSES, FIELDS, AND METHODS
+--------------------------------
+One important characteristic of method parameters in Scala is that they are vals, 
+  not vars.
+
+In the absence of any explicit return statement, a Scala method returns the last 
+  value computed by the method.
+
+A side effect is generally defined as mutating state somewhere external to the 
+  method or performing an I/O action.
+
+A method that is executed only for its side effects is known as a procedure.
+
+4.2 SEMICOLON INFERENCE
+-----------------------
+Semicolon is required if you write multiple statements on a single line
+
+4.3 SINGLETON OBJECTS
+---------------------
+A singleton object definition looks like a class definition, except instead of 
+  the keyword class you use the keyword object.
+
+When a singleton object shares the same name with a class, it is called that 
+  class's companion object.
+
+A singleton object that does not share the same name with a companion class is 
+  called a standalone object.
+
+One difference between classes and singleton objects is that singleton objects 
+  cannot take parameters, whereas classes can.
+
+4.4 A SCALA APPLICATION
+-----------------------
+To run a Scala program, you must supply the name of a standalone singleton object 
+  with a main method that takes one parameter, an Array[String], and has a result 
+  type of Unit.
+
+One difference between Scala and Java is that whereas Java requires you to put a 
+  public class in a file named after the class—for example, you'd put class 
+  SpeedRacer in file SpeedRacer.java—in Scala, you can name .scala files anything 
+  you want, no matter what Scala classes or code you put in them.
+
+4.5 THE APP TRAIT
+-----------------
+To use the trait, you first write "extends App" after the name of your singleton 
+  object. Then instead of writing a main method, you place the code you would 
+  have put in the main method directly between the curly braces of the singleton 
+  object.
