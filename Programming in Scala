@@ -213,3 +213,57 @@ To use the trait, you first write "extends App" after the name of your singleton
   object. Then instead of writing a main method, you place the code you would 
   have put in the main method directly between the curly braces of the singleton 
   object.
+
+Chapter 5
+=========
+Basic Types and Operations
+
+5.1 SOME BASIC TYPES
+--------------------
+Scala's basic types have the exact same ranges as the corresponding types in Java.
+
+5.2 LITERALS
+------------
+You start and end a raw string with three double quotation marks in a row (""").
+
+5.3 STRING INTERPOLATION
+------------------------
+Its most common use case is to provide a concise and readable alternative to 
+  string concatenation.
+
+Scala provides two other string interpolators by default: raw and f.
+
+5.4 OPERATORS ARE METHODS
+-------------------------
+Operators are actually just a nice syntax for ordinary method calls.
+
+ANY METHOD CAN BE AN OPERATOR
+
+In Scala, you can leave off empty parentheses on method calls.
+The convention is that you include parentheses if the method has side effects, 
+  such as println(), but you can leave them off if the method has no side effects, 
+  such as toLowerCase invoked on aString
+
+5.5 ARITHMETIC OPERATIONS
+-------------------------
+
+5.6 RELATIONAL AND LOGICAL OPERATIONS
+-------------------------------------
+The && and || operations short-circuit as in Java: expressions built from these 
+  operators are only evaluated as far as needed to determine the result.
+
+If you want to evaluate the right hand side no matter what, use & and | instead.
+
+5.7 BITWISE OPERATIONS
+----------------------
+
+5.8 OBJECT EQUALITY
+-------------------
+
+5.9 OPERATOR PRECEDENCE AND ASSOCIATIVITY
+-----------------------------------------
+
+5.10 RICH WRAPPERS
+------------------
+Operators in Scala are method calls, and that implicit conversions to rich 
+  variants exist for Scala's basic types that add even more useful methods.
