@@ -91,3 +91,72 @@ STEP 6. ITERATE WITH FOREACH AND FOR
 ------------------------------------
 Scala enables you to program imperatively, but as you get to know Scala better, 
   you'll likely often find yourself programming in a more functional style.
+
+Chapter 3
+=========
+Next Steps in Scala
+
+STEP 7. PARAMETERIZE ARRAYS WITH TYPES
+--------------------------------------
+When you define a variable with val, the variable can't be reassigned, but the 
+  object to which it refers could potentially still be changed.
+
+If a method takes only one parameter, you can call it without a dot or parentheses.
+
+Scala doesn't technically have operator overloading, because it doesn't actually 
+  have operators in the traditional sense. Instead, characters such as +, -, *, 
+  and / can be used in method names.
+
+When you apply parentheses surrounding one or more values to a variable, Scala 
+  will transform the code into an invocation of a method named apply on that 
+  variable.
+
+Scala achieves a conceptual simplicity by treating everything, from arrays to 
+  expressions, as objects with methods.
+
+STEP 8. USE LISTS
+-----------------
+Scala array is a mutable sequence of objects that all share the same type. 
+  An Array[String] contains only strings, for example. Although you can't change 
+  the length of an array after it is instantiated, you can change its element 
+  values. Thus, arrays are mutable objects.
+
+For an immutable sequence of objects that share the same type you can use Scala's 
+  List class.
+
+:: is a method of its right operand
+
+WHY NOT APPEND TO LISTS?
+The time it takes to append to a list grows linearly with the size of the list, 
+  whereas prepending with :: takes constant time.
+
+STEP 9. USE TUPLES
+------------------
+Like lists, tuples are immutable, but unlike lists, tuples can contain different 
+  types of elements.
+
+STEP 10. USE SETS AND MAPS
+--------------------------
+Scala also provides mutable and immutable alternatives for sets and maps, but 
+  uses the same simple names for both versions.
+
+STEP 11. LEARN TO RECOGNIZE THE FUNCTIONAL STYLE
+------------------------------------------------
+If code contains any vars, it is probably in an imperative style. If the code 
+  contains no vars at all—i.e., it contains only vals—it is probably in a 
+  functional style. One way to move towards a functional style, therefore, is 
+  to try to program without vars.
+
+If a function isn't returning any interesting value, which is what a result 
+  type of Unit means, the only way that function can make a difference in the 
+  world is through some kind of side effect.
+
+A BALANCED ATTITUDE FOR SCALA PROGRAMMERS
+-----------------------------------------
+Prefer vals, immutable objects, and methods without side effects. Reach for 
+  them first. Use vars, mutable objects, and methods with side effects when you 
+  have a specific need and justification for them.
+
+STEP 12. READ LINES FROM A FILE
+-------------------------------
+Use scala.io.Source library to read lines from a file.
