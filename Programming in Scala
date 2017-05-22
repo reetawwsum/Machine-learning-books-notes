@@ -336,3 +336,44 @@ Camel-case names of fields, method parameters, local variables, and functions
 6.12 IMPLICIT CONVERSIONS
 -------------------------
 You can create an implicit conversion that converts types when needed.
+
+Chapter 7
+=========
+Built-in Control Structures
+
+7.1 IF EXPRESSIONS
+------------------
+
+7.2 WHILE LOOPS
+---------------
+You challenge while loops in your code in the same way you challenge vars.
+
+7.3 FOR EXPRESSIONS
+-------------------
+Iteration through collections
+Filtering
+Nested iteration
+Mid-stream variable bindings
+Producing a new collection
+
+7.4 EXCEPTION HANDLING WITH TRY EXPRESSIONS
+-------------------------------------------
+Throwing exceptions
+Catching exceptions
+The finally clause
+Yielding a value
+
+7.5 MATCH EXPRESSIONS
+---------------------
+
+7.6 LIVING WITHOUT BREAK AND CONTINUE
+-------------------------------------
+The simplest approach is to replace every continue by an if and every break by a 
+  boolean variable. The boolean variable indicates whether the enclosing while 
+  loop should continue.
+
+7.7 VARIABLE SCOPE
+------------------
+
+7.8 REFACTORING IMPERATIVE-STYLE CODE
+-------------------------------------
