@@ -377,3 +377,99 @@ The simplest approach is to replace every continue by an if and every break by a
 
 7.8 REFACTORING IMPERATIVE-STYLE CODE
 -------------------------------------
+
+Chapter 8
+=========
+Functions and Closures
+
+Scala offers several ways to define functions that are not present in Java. 
+  Besides methods, which are functions that are members of some object, there 
+  are also functions nested within functions, function literals, and function 
+  values. 
+
+8.1 METHODS
+-----------
+The most common way to define a function is as a member of some object; such a 
+  function is called a method.
+
+8.2 LOCAL FUNCTIONS
+-------------------
+Local functions are visible only in their enclosing block.
+
+8.3 FIRST-CLASS FUNCTIONS
+-------------------------
+A function literal is compiled into a class that when instantiated at runtime 
+  is a function value. Thus the distinction between function literals and values 
+  is that function literals exist in the source code, whereas function values 
+  exist as objects at runtime. The distinction is much like that between classes 
+  (source code) and objects (runtime).
+
+8.4 SHORT FORMS OF FUNCTION LITERALS
+------------------------------------
+One way to make a function literal more brief is to leave off the parameter types.
+
+This is called target typing because the targeted usage of an expression 
+  is allowed to influence the typing of that expression.
+
+A second way to remove useless characters is to leave out parentheses around a 
+  parameter whose type is inferred.
+
+8.5 PLACEHOLDER SYNTAX
+----------------------
+To make a function literal even more concise, you can use underscores as 
+  placeholders for one or more parameters, so long as each parameter appears 
+  only one time within the function literal.
+
+8.6 PARTIALLY APPLIED FUNCTIONS
+-------------------------------
+You can also replace an entire parameter list with an underscore. For example, 
+  rather than writing println(_), you could write println _. You can also express 
+  a partially applied function by supplying only some of the required arguments.
+
+8.7 CLOSURES
+------------
+Any function literal containing a free variable, the function value (the object) 
+  that's created at runtime from this function literal is called a closure.
+
+The name arises from the act of "closing" the function literal by "capturing" 
+  the bindings of its free variables. A function literal with no free variables, 
+  such as (x: Int) => x + 1, is called a closed term, where a term is a bit of 
+  source code. Thus a function value created at runtime from this function literal 
+  is not a closure in the strictest sense, because (x: Int) => x + 1 is already 
+  closed as written. But any function literal with free variables, such as 
+  (x: Int) => x + more, is an open term.
+
+Scala's closures capture variables themselves, not the value to which variables 
+  refer.
+
+8.8 SPECIAL FUNCTION CALL FORMS
+-------------------------------
+
+Repeated parameters:
+Scala allows you to indicate that the last parameter to a function may be repeated. 
+  This allows clients to pass variable length argument lists to the function. 
+  To denote a repeated parameter, place an asterisk after the type of the parameter. 
+
+Named arguments:
+Named arguments allow you to pass arguments to a function in a different order.
+
+Default parameter values:
+
+8.9 TAIL RECURSION
+------------------
+If the solution is tail recursive, there won't be any runtime overhead to be paid.
+A tail-recursive function will not build a new stack frame for each call; all 
+  calls will execute in a single frame.
+
+Limits of tail recursion:
+The use of tail recursion in Scala is fairly limited because the JVM instruction 
+  set makes implementing more advanced forms of tail recursion very difficult. 
+  Scala only optimizes directly recursive calls back to the same function making 
+  the call. If the recursion is indirect, as in the following example of two 
+  mutually recursive functions, no optimization is possible.
+
+You also won't get a tail-call optimization if the final call goes to a function 
+  value.
+
+8.10 CONCLUSION
+---------------
