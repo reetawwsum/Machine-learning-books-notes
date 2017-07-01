@@ -473,3 +473,39 @@ You also won't get a tail-call optimization if the final call goes to a function
 
 8.10 CONCLUSION
 ---------------
+
+Chapter 9
+=========
+Control Abstraction
+
+Scala doesn't have many built-in control abstractions because it gives you the 
+  ability to create your own.
+
+9.1 REDUCING CODE DUPLICATION
+-----------------------------
+Use higher order functions and closures to pass less parameters to the function.
+
+9.2 SIMPLIFYING CLIENT CODE
+---------------------------
+Use Scala looping methods such as exists() instead of using for, while loop.
+
+9.3 CURRYING
+------------
+A curried function is applied to multiple argument lists, instead of just one.
+Such technique is used to create partially applied function.
+
+9.4 WRITING NEW CONTROL STRUCTURES
+----------------------------------
+All you need to do is create methods that take functions as arguments.
+One way in which you can make the client code look a bit more like a built-in 
+  control structure is to use curly braces instead of parentheses to surround 
+  the argument list. This curly braces technique will work, however, only if 
+  you're passing in one argument.
+
+9.5 BY-NAME PARAMETERS
+----------------------
+To make a by-name parameter, you give the parameter a type starting with 
+  => instead of () =>
+
+9.6 Conclusion
+--------------
